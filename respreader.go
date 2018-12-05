@@ -6,7 +6,6 @@ import (
 	"compress/zlib"
 	"gopkg.in/kothar/brotli-go.v0/dec"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"strings"
 )
@@ -48,5 +47,4 @@ func Decode(Response *http.Response) ([]byte, error) {
 	default:
 		return ioutil.ReadAll(Response.Body)
 	}
-	log.Fatal()
 }
