@@ -9,7 +9,7 @@ Supported http content encodings: `gzip`, `deflate`, `br` (aka [Brotli](https://
 package main
 
 import (
-	"https://github.com/oripio/respreader"
+	"github.com/oripio/respreader"
 	"log"
 	"net/http"
 )

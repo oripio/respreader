@@ -1,7 +1,7 @@
 package main
 
 import (
-	"https://github.com/oripio/respreader"
+	"github.com/oripio/respreader"
 	"log"
 	"net/http"
 )
