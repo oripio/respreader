@@ -1,0 +1,17 @@
+# IntelliJ project files
+.idea
+*.iml
+
+# Build files
+bin
+out
+tars
+build
+
+# VS Code Debug
+launch.json
+.vscode/
+
+# macOS
+.DS_STORE
+
