@@ -141,9 +141,9 @@ func EncodeBytes(buffer []byte, algo string) ([]byte, error) {
 		return nil, err
 	}
 
-	defer func() {
-		_ = writer.Close()
-	}()
+	if err := writer.Close(); err != nil {
+		return nil, err
+	}
 
 	return buff.Bytes(), nil
 }
